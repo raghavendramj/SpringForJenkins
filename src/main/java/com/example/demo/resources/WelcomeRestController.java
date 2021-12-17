@@ -13,6 +13,6 @@ public class WelcomeRestController {
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
 	@GetMapping("/welcome/{name}")
 	public String welcome(@PathVariable("name") String name) {
-		return "Welcome to upGrad - Automated - Code Deployment Session "+ name";
+		return "Welcome to upGrad - Automated - Code Deployment Session "+ name;
 	}
 }
